@@ -1,11 +1,11 @@
 import express from 'express';
-import {addVehicleController} from '../controllers/addVehicleController.js';
-import {trackVehicleController} from '../controllers/trackVehicleController.js';
+import {addDocController} from '../controllers/addDocController.js';
+import {trackDocController} from '../controllers/trackDocController.js';
 
 const router = express.Router();
 
-router.post('/add-vehicle', addVehicleController);
-router.get('/track-vehicle', trackVehicleController);
+router.post('/add-doc', addDocController);
+router.get('/track-doc', trackDocController);
 
 
 export default router;

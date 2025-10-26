@@ -1,4 +1,4 @@
-export const addVehicleController = async (req, res) =>{
+export const addDocController = async (req, res) =>{
     try{
         // Logic to add vehicle
     }catch(error){
