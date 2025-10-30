@@ -33,8 +33,8 @@ const AddDoc = () => {
       setLoading(true);
       setMessage(null);
       setError(null);
-
-      const response = await fetch("http://localhost:5000/api/add-doc", {
+      const response = await fetch(`${import.meta.env.VITE_BASE_URL}/api/add-doc`, {
+        
         method: "POST",
         headers: {
           "Content-Type": "application/json",
